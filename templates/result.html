@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>おみくじ結果</title>
+    </head>
+    <body>
+        <h1>結果: {{ choice.result }}</h1>
+        <p>{{ choice.advice }}</p>
+        <p>ラッキーアイテムは…{{ choice.item}}</p>
+
+        <a href="{{ x_url }}" target="_blank">
+            <button>X (旧Twitter) でシェアする！</button>
+        </a>
+        <br><br>
+        <a href="{{ url_for('index') }}">もう一回引く？</a>
+    </body>
+</html>
