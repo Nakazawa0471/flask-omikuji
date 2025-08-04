@@ -3,16 +3,22 @@
     <head>
         <meta charset="UTF-8" />
         <title>おみくじ結果</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
+    
     <body>
+        <div class="container">
+        <img src="{{ url_for('static', filename='images/' + choice.image) }}" alt="{{ choice.result }}の画像" class="result-img">
+        
         <h1>結果: {{ choice.result }}</h1>
         <p>{{ choice.advice }}</p>
-        <p>ラッキーアイテムは…{{ choice.item}}</p>
-
+        <p>ラッキーアイテムは…{{ choice.item}}!</p>
+        
         <a href="{{ x_url }}" target="_blank">
             <button>X (旧Twitter) でシェアする！</button>
         </a>
         <br><br>
         <a href="{{ url_for('index') }}">もう一回引く？</a>
+        </div>
     </body>
 </html>

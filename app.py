@@ -6,11 +6,11 @@ import urllib.parse
 app = Flask(__name__)
 
 results = [
-    {"result": "大吉", "advice": "今日は何事もうまくいく！", "item": "黒のボールペン"},
-    {"result": "吉", "advice": "外出するといいことあるかも！", "item": "ベージュの帽子"},
-    {"result": "中吉", "advice": "部屋を掃除するといいことあるかも！！", "item": "青い靴"},
-    {"result": "小吉", "advice": "小さな幸せを見逃さないで！", "item": "コーヒー"},
-    {"result": "凶", "advice": "持ち物を無くすかも！", "item": "キーホルダー"}
+    {"result": "大吉", "advice": "今日は何事もうまくいく！", "item": "黒のボールペン", "image": "daikichi.png"},
+    {"result": "吉", "advice": "外出するといいことあるかも！", "item": "ベージュの帽子", "image": "kichi.png"},
+    {"result": "中吉", "advice": "部屋を掃除するといいことあるかも！！", "item": "青い靴", "image": "chukichi.png"},
+    {"result": "小吉", "advice": "小さな幸せを見逃さないで！", "item": "コーヒー", "image": "syoukichi.png"},
+    {"result": "凶", "advice": "持ち物を無くすかも！", "item": "キーホルダー", "image": "kyou.png"}
 ]
 
 @app.route('/')

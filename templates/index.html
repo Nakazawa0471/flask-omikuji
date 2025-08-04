@@ -3,12 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <title>おみくじ</title>
-
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
+    
     <body>
-        <h1>おみくじアプリ</h1>
-        <a href="{{ url_for('omikuji') }}">
+        <div class="container">
+            <h1>おみくじアプリ</h1>
+            <img src="{{ url_for('static', filename='images/omikuji.png') }}" alt="おみくじ" class="omikuji-img">
+             <a href="{{ url_for('omikuji') }}">
             <button>おみくじを引く！</button>
-        </a>
+            </a>
+        </div>
     </body>
 </html>
