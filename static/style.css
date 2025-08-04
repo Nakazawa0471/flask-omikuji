@@ -1,18 +1,13 @@
 body {
     background: linear-gradient(to bottom, #fef6e4, #eae2d6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     font-family: 'Noto Sans Jp', sans-serif;
     color: #333;
     text-align: center;
 }
-
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 50vw;
-    margin: 0 auto;
-    text-align: center;
-}
-
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -21,6 +16,29 @@ h1 {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
+/* スマホ用 */
+@media (max-width: 600px) {
+  .container {
+    max-width: 90vw;
+    padding: 0 10px;
+}
+
+.omikuji-img,
+.result-img {
+    width: 90%;
+    max-width: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+button{
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+}
 .omikuji-img,
 .result-img {
     width: 50%;
