@@ -1,11 +1,9 @@
 body {
-    background: linear-gradient(to bottom, #fef6e4, #eae2d6);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     font-family: 'Noto Sans Jp', sans-serif;
-    color: #333;
     text-align: center;
 }
 
