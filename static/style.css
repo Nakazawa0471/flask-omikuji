@@ -9,6 +9,13 @@ body {
     text-align: center;
 }
 
+.yuji-boku-regular {
+  font-family: "Yuji Boku", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -18,11 +25,24 @@ body {
 }
 
 h1 {
+    display: flex;
+    align-items: center;
     font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 2rem;
-    color: #d62828;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-family: "Yuji Boku", serif;
+    color: #b90048;
+    &::before,&::after {
+        content: "";
+        height: 1px;
+        flex-grow: 1;
+        background-color: #b90048;
+      }
+      &::before {
+        margin-right: 1rem;
+      }
+      &::after {
+        margin-left: 1rem;
+      }
+
 }
 
 .omikuji-img,
@@ -32,11 +52,11 @@ h1 {
     height: auto;
     display: block;
     margin: 20px auto;
-    transition: transform 0.3s ease;
+    /*transition: transform 0.3s ease;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     background-color: white;
     border-radius: 8px;
-    padding: 8px;
+    padding: 8px;*/
 }
 
 .omikuji-img:hover {
@@ -61,6 +81,7 @@ button:hover{
 }
 
 
+
 /* スマホ用 */
 @media (max-width: 600px) {
     body {
@@ -75,7 +96,7 @@ button:hover{
 .omikuji-img,
 .result-img {
     width: 90%;
-    max-width: none;
+    max-width: 300px;
 }
 
 h1 {
